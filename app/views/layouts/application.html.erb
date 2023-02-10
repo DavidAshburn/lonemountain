@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lonemountain</title>
+    <title>Lone Mountain Society</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -27,13 +27,11 @@
     </div>
   <% end %>
 
-  <body class="bg-fixed bg-oversize bg-gradient-to-bl from-cyan-200 via-blue-400 to-indigo-600">
+  <body class="bg-fixed bg-oversize bg-gradient-to-bl from-yellow-100 via-amber-200 to-orange-300">
     <main class="flex flex-col justify-center items-center w-[100vw]">
-      <% if user_signed_in? %>
-        <div class="ml-5 mt-5 w-11/12">
-          <%= render 'layouts/nav' %>
-        </div>
-        <% end %>
+      <div class="ml-5 mt-5 w-11/12">
+        <%= render 'layouts/nav' %>
+      </div>
       <%= yield %>
     </main>
   </body>
