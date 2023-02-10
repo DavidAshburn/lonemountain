@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby 3.1.2
 
-Things you may want to cover:
+* PostgreSQL 14.5
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
+* Tailwind
 
 * Database creation
+	only Users for now
 
 * Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
+	no seed file yet
 
 * Deployment instructions
+	not ready for production yet
+	test and prod environments still require devise mailer information
 
-* ...
+* Getting started
+	
+	bundle install
+	rails db:migrate
+	bin/dev
