@@ -6,6 +6,9 @@
 
 * Tailwind
 
+* pdfjs_viewer-rails gem for PDF reader
+ - PDF files must be registered in app/assets/config/manifest.js for pre-compilation
+
 * Database creation
 	only Users for now
 
