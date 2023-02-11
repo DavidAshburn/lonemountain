@@ -1,14 +1,24 @@
-<%= image_tag("mountside.png", class: "fixed bottom-0 right-0") %>
+<%= image_tag("mountside.png", class: "fixed bottom-0 right-0 -z-10") %>
 
-<div class="mt-12 flex flex-col w-full items-center">
-  <p class="font-aboreto md:text-4xl text-2xl transition-all">The Lone Mountain Literary Society</p>
-  <p class="font-cormorant md:text-xl text-lg mt-4 transition-all">A non-profit journal for exceptional writers and artists</p>
+<div class="mt-4 p-4 md:px-20 lg:px-40 xl:px-60 bg-white font-cormorant font-semibold flex flex-col transition-all">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  <p class="font-bold self-end mr-20 lg:mr-[85%] transition-all">- M.H.Lopez</p>
 </div>
 <div class="mt-4 p-4 md:px-20 lg:px-40 xl:px-60 bg-white font-cormorant font-semibold flex flex-col transition-all">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
   <p class="font-bold self-end mr-20 lg:mr-[85%] transition-all">- M.H.Lopez</p>
 </div>
-<div class="flex flex-col ml-6 mt-6 font-aboreto">
+<div class="mt-4 p-4 md:px-20 lg:px-40 xl:px-60 bg-white font-cormorant font-semibold flex flex-col transition-all">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  <p class="font-bold self-end mr-20 lg:mr-[85%] transition-all">- M.H.Lopez</p>
+</div>
+<div class="mt-4 p-4 md:px-20 lg:px-40 xl:px-60 bg-white font-cormorant font-semibold flex flex-col transition-all">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  <p class="font-bold self-end mr-20 lg:mr-[85%] transition-all">- M.H.Lopez</p>
+</div>
+<div class="flex flex-col ml-6 mt-6 font-aboreto h-[40vh]">
   <%= link_to "Mission", home_mission_path, class: ""%>
-  <%= link_to "Issue Zero", issue_zero_path, class: ""%>
+  <%# link_to "Issue Zero", issue_zero_path, class: ""%>
+  <% @asset = asset_url("issuezero.pdf") %>
+  <%= link_to "Issue Zero", pdfjs.minimal_path(file: @asset) %>
 </div>

@@ -1,35 +1,21 @@
-<nav data-controller="navbar" class="sticky h-12 w-[95%] flex justify-between items-center gap-8 pr-8 bg-slate-100 mt-4 inset-shadow rounded-full font-aboreto no-underline text-lg">
-  <div class="flex justify-start items-center">
-    <%= link_to image_tag('icon.png', class:"min-w-[3rem] w-12 h-12 rounded-full"), root_path %>
-    <div class="overflow-hidden px-2.5 py-5 flex">
-      <button class="flex text-xl text-zinc-700 hover:text-zinc-500 my-2 ml-2" data-action="navbar#showDrop navbar#hideDropAlt">Go Out</button>
-      <div class="bg-slate-100 z-20 shadow-small min-w-[180px] hidden absolute rounded-b-xl" data-navbar-target="maindrop">
-        <%# link_to "Find Courses", courses_path, class:"flex ml-2 my-2 hover:text-cyan-600" %>
-        <button class="flex font-cormorant text-4xl  text-zinc-700 hover:text-zinc-500 absolute right-3 bottom-2" data-action="navbar#hideDrop">x</button>
+<nav data-controller="navbar" class="sticky top-0 bg-lime-800 no-underline w-full px-12 py-2">
+  <div class="flex flex-row items-center justify-between">
+    <div class="font-aboreto transition-all text-2xl md:text-4xl lg:text-5xl text-white">The Lone Mountain Society</div>
+    <div class="flex flex-col items-center gap-2 font-josefin text-white">
+      <div class="font-aboreto text-md md:text-lg lg:text-xl transition-all">Support</div>
+      <div class="flex flex-row justify-evenly gap-2 text-md lg:text-lg transition-all">
+        <p class="">Subscribe</p>
+        <span>~</span>
+        <p class="">Donate</p>
       </div>
     </div>
   </div>
-  <div class="overflow-hidden flex min-w-fit">
-    <div class="overflow-hidden px-2.5 py-2 flex sm:hidden">
-      <button class="flex text-xl my-2 ml-2 hover:text-cyan-600" data-action="navbar#showDropAlt navbar#hideDrop">Stay In</button>
-        <div class="bg-slate-100 z-20 shadow-small min-w-[180px] hidden absolute rounded-b-xl right-5 py-2" data-navbar-target="altdrop">
-          <%# link_to "Map Stub", home_map_path, class:"flex ml-2 my-2 hover:text-cyan-600"%>
-          <% if user_signed_in? %>
-            <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class:"flex   text-zinc-700 hover:text-zinc-500 ml-2 my-2" %>
-          <% else %>
-            <%= link_to "Sign In", new_user_session_path, class:"flex   text-zinc-700 hover:text-zinc-500 ml-2 my-2" %>
-            <%= link_to "Register", new_user_registration_path, class:"flex   text-zinc-700 hover:text-zinc-500 ml-2 my-2" %>
-          <% end %>
-          <button class="flex font-cormorant text-4xl text-zinc-700 hover:text-zinc-500 absolute right-3 bottom-2" data-action="navbar#hideDropAlt">x</button>
-        </div>
-    </div>
-    <div class="flex justify-end items-center">
-      <%# link_to "Map Stub", home_map_path, class:"px-2.5 py-2 hover:text-cyan-600 hidden sm:flex"%>
-      <% if user_signed_in? %>
-        <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class:"hidden sm:flex text-xl text-zinc-700 hover:text-zinc-500 px-2.5 py-2 " %>
-      <% else %>
-        <%= link_to "Sign In", new_user_session_path, class:"hidden sm:flex text-xl text-zinc-700 hover:text-zinc-500 px-2.5 py-2 " %>
-        <%= link_to "Register", new_user_registration_path, class:"hidden sm:flex text-xl text-zinc-700 hover:text-zinc-500 px-2.5 py-2 " %>
-      <% end %>
-    </div>
+  <div class="flex flex-row justify-evenly px-12 font-aboreto font-bold text-md md:text-lg lg:text-xl">
+    <p>Fiction</p>
+    <p>Poetry</p>
+    <p>Art</p>
+    <p>Interviews</p>
+    <p>Folios</p>
+    <p>Profiles</p>
+  </div>
 </nav>
