@@ -23,22 +23,6 @@
     @apply shadow-[inset_0_-2px_4px_rgba(255,255,255,0.5)];
   }
 
-  .glass-box {
-    @apply rounded-full bg-clip-padding backdrop-filter bg-gradient-to-b from-slate-100/20 to-slate-300/40 border-b border-l inset-shadow transition-all ease-in;
-  }
-
-  .gray-box {
-    @apply bg-clip-padding backdrop-filter bg-gradient-to-b from-slate-100 to-slate-300 border-t border-l border-gray-200 inset-shadow rounded-lg
-  }
-
-  .glass-button {
-    @apply rounded-full bg-clip-padding backdrop-filter backdrop-blur-xl bg-gradient-to-b from-slate-400/20 to-zinc-600/20 rounded-full border-t border-l border-gray-200 inset-shadow;
-  }
-
-  .glass-blur {
-    @apply bg-clip-padding backdrop-filter backdrop-blur-xl bg-gradient-to-b from-slate-100/30 to-slate-300/50 inset-shadow transition-all ease-in;
-  }
-
   .container-alert {
     @apply flex flex-col justify-center w-[100vw] fixed bottom-10
   }
@@ -49,6 +33,10 @@
 
   .notice {
     @apply text-white border border-slate-100 px-6 flex w-[80vw] rounded-tl-[3.2rem] rounded-tr-xl rounded-br-[3.2rem] rounded-bl-xl font-cormorant p-4 justify-between items-center fixed bottom-4 left-10;
+  }
+
+  .poem {
+    @apply mt-4 p-4 md:px-20 lg:px-40 xl:px-60 bg-white bg-opacity-50 font-cormorant font-semibold flex flex-col transition-all;
   }
 }
 
