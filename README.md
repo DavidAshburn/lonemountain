@@ -23,4 +23,7 @@
 	
 	bundle install
 	rails db:migrate
+	rake assets:clean
+	rake assets:precompile
 	bin/dev
+
