@@ -20,6 +20,9 @@
 	test and prod environments still require devise mailer information
 
 * Getting started
+
+	environments/development.rb
+	 config.assets.debug = true
 	
 	bundle install
 	rails db:migrate
